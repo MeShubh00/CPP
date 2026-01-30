@@ -1,34 +1,18 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main ()
+void patt()
 {
- int day;
- cin>>day;
+    for (int i = 1; i <= 4; i++) {        // rows
+        for (int j = 1; j <= i; j++) {    // stars in each row
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
 
- switch(day)
- {
-  case 1:
-  cout<<"MONDAY";
-  break;
-case 2:
-  cout<<"TUESDAY";
-  break;
-  case 3:
-  cout<<"WEDNESDAY";
-  break;
-case 4:
-  cout<<"THRUSDAY";
-  break;
-  case 5:
-  cout<<"FRIDAY";
-  break;
-  case 6:
-  cout<<"SATURDAY";
-  break;
-  case 7:
-  cout<<"SUNDAY";
-  break;
- }
+int main()
+{
+    patt();
     return 0;
 }
